@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator — Premium</title>
+    <meta name="description" content="A beautiful, modern calculator with glassmorphism design and smooth animations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated background orbs -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+
+    <div class="calculator" id="calculator">
+        <!-- Display -->
+        <div class="display" id="display">
+            <div class="display-expression" id="display-expression"></div>
+            <div class="display-current" id="display-current">0</div>
+        </div>
+
+        <!-- Button Grid -->
+        <div class="btn-grid">
+            <button class="btn btn-clear" id="btn-clear" data-action="clear">AC</button>
+            <button class="btn btn-operator" id="btn-backspace" data-action="backspace">⌫</button>
+            <button class="btn btn-operator" id="btn-percent" data-action="percent">%</button>
+            <button class="btn btn-accent" id="btn-divide" data-action="operator" data-value="/">÷</button>
+
+            <button class="btn btn-number" id="btn-7" data-action="number" data-value="7">7</button>
+            <button class="btn btn-number" id="btn-8" data-action="number" data-value="8">8</button>
+            <button class="btn btn-number" id="btn-9" data-action="number" data-value="9">9</button>
+            <button class="btn btn-accent" id="btn-multiply" data-action="operator" data-value="*">×</button>
+
+            <button class="btn btn-number" id="btn-4" data-action="number" data-value="4">4</button>
+            <button class="btn btn-number" id="btn-5" data-action="number" data-value="5">5</button>
+            <button class="btn btn-number" id="btn-6" data-action="number" data-value="6">6</button>
+            <button class="btn btn-accent" id="btn-subtract" data-action="operator" data-value="-">−</button>
+
+            <button class="btn btn-number" id="btn-1" data-action="number" data-value="1">1</button>
+            <button class="btn btn-number" id="btn-2" data-action="number" data-value="2">2</button>
+            <button class="btn btn-number" id="btn-3" data-action="number" data-value="3">3</button>
+            <button class="btn btn-accent" id="btn-add" data-action="operator" data-value="+">+</button>
+
+            <button class="btn btn-number" id="btn-negate" data-action="negate">±</button>
+            <button class="btn btn-number" id="btn-0" data-action="number" data-value="0">0</button>
+            <button class="btn btn-number" id="btn-decimal" data-action="decimal">.</button>
+            <button class="btn btn-equals" id="btn-equals" data-action="equals">=</button>
+        </div>
+
+        <!-- Watermark -->
+        <div class="watermark" id="watermark">Developed by <span class="watermark-name">Rehman Ullah</span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
